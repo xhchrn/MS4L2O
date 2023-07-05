@@ -1,0 +1,55 @@
+---
+
+optimizee-type: LogisticL1
+input-dim: 50
+output-dim: 1000
+sparsity: 20
+rho: 0.1
+
+optimizer: CoordMathLSTM
+lstm-layers: 2
+lstm-hidden-size: 20
+grad-method: smooth_grad
+
+p-use: false
+p-scale: 2.0
+p-scale-learned: false
+p-norm: softplus
+
+b-use: false
+b-scale: 1.0
+b-scale-learned: false
+b-norm: eye
+
+b1-use: false
+b1-scale: 1.0
+b1-scale-learned: false
+b1-norm: eye
+
+b2-use: false
+b2-scale: 1.0
+b2-scale-learned: false
+b2-norm: eye
+
+a-use: false
+a-scale: 0.3
+a-scale-learned: false
+a-norm: softplus
+
+state-scale: 1
+
+save-dir: "LogisticL1"
+
+device: cuda:0
+
+init-lr: 3e-3
+global-training-steps: 500
+optimizer-training-steps: 100
+unroll-length: 20
+train-batch-size: 64
+
+val-size: 1024
+val-freq: 5
+val-length: 100
+
+print-freq: 20

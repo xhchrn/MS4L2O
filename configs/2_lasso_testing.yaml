@@ -1,0 +1,52 @@
+---
+
+optimizee-type: LASSO
+input-dim: 500
+output-dim: 250
+sparsity: 50
+
+optimizer: CoordMathLSTM
+lstm-layers: 2
+lstm-hidden-size: 20
+grad-method: smooth_grad
+
+p-use: false
+p-scale: 1.0
+p-scale-learned: false
+p-norm: sigmoid
+
+b-use: false
+b-scale: 1.0
+b-scale-learned: false
+b-norm: sigmoid
+
+b1-use: false
+b1-scale: 1.0
+b1-scale-learned: false
+b1-norm: eye
+
+b2-use: false
+b2-scale: 1.0
+b2-scale-learned: false
+b2-norm: eye
+
+a-use: false
+a-scale: 1.0
+a-scale-learned: false
+a-norm: sigmoid
+
+save-dir: "LASSO"
+
+device: cuda:0
+
+test: true
+test-length: 1000
+test-size: 1024
+test-batch-size: 32
+loss-save-path: losses-rand
+
+# step-size: 1e-4
+momentum1: 1e-4
+momentum2: 1e-4
+eps: 1e-8
+hyper-step: 1e-7
