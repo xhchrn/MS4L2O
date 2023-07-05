@@ -78,7 +78,7 @@ python main.py --config ./configs/0_lasso_toy.yaml --test --device cpu
 
 Our code provides various options for optimizers and optimizees, including their respective parameters and configurations. All the configurations are listed at the beginnig of `main.py`. 
 
-We leverage the `configargparse` package to manage all these configurations. You can specify values for particular parameters either in a `.yaml` file or directly in the Python command. For instance, in the previously mentioned toy example, we set the `device` parameter to `uda:0` in the `./configs/0_lasso_toy.yaml` file. If you add `--device cpu` to the command, the command's values will **overwrite** those in the yaml file.
+We leverage the `configargparse` package to manage all these configurations. You can specify values for particular parameters either in a `.yaml` file or directly in the Python command. For instance, in the previously mentioned toy example, we set the `device` parameter to `cuda:0` in the `./configs/0_lasso_toy.yaml` file. If you add `--device cpu` to the command, the command's values will **overwrite** those in the yaml file.
 
 To reproduce the results in our paper, you may check yaml files in `./configs/` and run commands in `./scripts/`.
 
