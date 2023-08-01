@@ -1,6 +1,8 @@
 # Towards Constituting Mathematical Structures for Learning to Optimize
 
-This repo is an implementation of the ICML 2023 paper "Towards Constituting Mathematical Structures for Learning to Optimize." The paper can be found here: https://arxiv.org/abs/2305.18577
+This repo is an implementation of the ICML 2023 paper:
+Towards Constituting Mathematical Structures for Learning to Optimize.
+The paper can be found here: https://proceedings.mlr.press/v202/liu23e.html or https://arxiv.org/abs/2305.18577
 
 ## Introduction
 
@@ -105,13 +107,14 @@ To obtain Figure 6, please read and run `./scripts/logistic_ood.sh`
 **(Background running).** If you want to run a command in background, you may use the command `nohup xxx >/dev/null 2>&1 &` where `xxx` means the command you want to run. All the outputs or logs can be found in the folder `./results/`.
 
 ## Citing our work
-If you find our codes helpful in your resarch or work, please cite our paper.
+If you find our codes helpful in your research or work, please cite our paper.
 
 ```
 @inproceedings{liu2023towards,
-  title={Towards Constituting Mathematical Structures for Learning to Optimize},
-  author={Liu, Jialin and Chen, Xiaohan and Wang, Zhangyang and Yin, Wotao and Cai, HanQin},
-  booktitle={International Conference on Machine Learning},
-  year={2023}
+  title     = {Towards Constituting Mathematical Structures for Learning to Optimize},
+  author    = {Liu, Jialin and Chen, Xiaohan and Wang, Zhangyang and Yin, Wotao and Cai, HanQin},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages     = {21426--21449},
+  year      = {2023}
 }
 ```
