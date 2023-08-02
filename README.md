@@ -2,7 +2,7 @@
 
 This repo is an implementation of the ICML 2023 paper:
 Towards Constituting Mathematical Structures for Learning to Optimize.
-The paper can be found here: https://proceedings.mlr.press/v202/liu23e.html or https://arxiv.org/abs/2305.18577
+The paper can be found here: https://proceedings.mlr.press/v202/liu23e.html or https://arxiv.org/abs/2305.18577.
 
 ## Introduction
 
